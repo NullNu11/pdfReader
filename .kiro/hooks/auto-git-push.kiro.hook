@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "name": "Auto Git Commit & Push",
+  "description": "When a file is saved, automatically generate a meaningful commit message based on the changes, commit, and push to the remote repository.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.py",
+      "**/*.sh",
+      "**/*.bat",
+      "**/*.spec",
+      "**/*.txt",
+      "**/*.md",
+      "**/*.gitignore"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A file was just saved. Please do the following:\n1. Run `git diff` to see what changed\n2. Run `git status` to see all staged/unstaged changes\n3. Stage all changes with `git add -A`\n4. Generate a concise, conventional commit message (e.g. \"feat: add toolbar collapse\", \"fix: pen drift on page boundary\", \"refactor: reorganize project structure\") based on the actual diff\n5. Commit with that message using `git commit -m \"...\"`\n6. Push to the remote with `git push`\n\nKeep the commit message short (under 72 chars), use conventional commit format (feat/fix/refactor/docs/chore), and write it in English."
+  }
+}

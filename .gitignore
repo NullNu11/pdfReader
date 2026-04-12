@@ -1,6 +1,21 @@
-# Default ignored files
+# IDE
+.idea/
 /shelf/
 /workspace.xml
-# 忽略所有 CSV 文件（包括多层目录）
-**/*.csv
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# PyInstaller
+build/
+dist/
+*.spec.bak
+
+# OS
 **/*.DS_Store
+
+# Data
+**/*.csv

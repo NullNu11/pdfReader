@@ -13,7 +13,9 @@ pyinstaller --onefile --noconsole --windowed ^
     --hidden-import pymupdf._pymupdf ^
     --exclude-module tkinter ^
     --exclude-module unittest ^
-    pdf_reader.py
+    --distpath ..\dist ^
+    --workpath ..\build ^
+    ..\src\pdf_reader.py
 
 echo.
 echo === Done ===

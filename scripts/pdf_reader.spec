@@ -2,7 +2,7 @@
 """PyInstaller spec for PDF Reader – single-file executable."""
 
 a = Analysis(
-    ['pdf_reader.py'],
+    ['../src/pdf_reader.py'],
     pathex=[],
     binaries=[],
     datas=[],

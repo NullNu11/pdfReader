@@ -9,7 +9,7 @@ pip3 install pyinstaller PyMuPDF PyQt6
 
 echo ""
 echo "=== Building executable ==="
-pyinstaller pdf_reader.spec --clean
+pyinstaller pdf_reader.spec --clean --distpath ../dist --workpath ../build
 
 echo ""
 echo "=== Done ==="
