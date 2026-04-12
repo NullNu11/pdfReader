@@ -1,0 +1,6 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# 忽略所有 CSV 文件（包括多层目录）
+**/*.csv
+**/*.DS_Store
